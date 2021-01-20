@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* backgroud */
+      body {
+        background-color: hsl(185, 75%, 39%);
+        text-align: center;
+        font-family: "Kumbh Sans", sans-serif;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      p {
+        color: hsl(0, 0%, 59%);
+        font-size: 12px;
+      }
+
+      span {
+        color: hsl(0, 0%, 59%);
+        font-weight: 400;
+        margin-left: 10px;
+      }
+
+      /* Background */
+      .top-back-image {
+        position: absolute;
+        z-index: -1;
+        right: 700px;
+        bottom: 300px;
+      }
+
+      .bottom-back-image {
+        position: absolute;
+        z-index: -1;
+        top: 300px;
+      }
+
+      /* Card */
+      .card {
+        width: fit-content;
+        margin: 4rem auto;
+        background-color: white;
+        border-radius: 16px;
+      }
+
+      .card-top-back {
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+      }
+
+      .card-content {
+        position: relative;
+        bottom: 60px;
+      }
+
+      /* About Victor */
+      .victor-image {
+        border-radius: 100%;
+        border: 6px solid white;
+      }
+
+      .country {
+        font-size: 16px;
+      }
+
+      /* Bottom Row */
+      .row {
+        text-align: center;
+        margin: auto;
+      }
+
+      .popularity {
+        padding: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="top-back-image"
+      src="images/bg-pattern-top.svg"
+      alt="top-back-image"
+    />
+    <img
+      class="bottom-back-image"
+      src="images/bg-pattern-bottom.svg"
+      alt="bottom-back-image"
+    />
+    <div class="card">
+      <img
+        class="card-top-back"
+        src="images/bg-pattern-card.svg"
+        alt="card-top-back"
+      />
+      <div class="card-content">
+        <img
+          class="victor-image"
+          src="images/image-victor.jpg"
+          alt="victor-image"
+        />
+        <h3 class="name">Victor Crest <span>26</span></h3>
+        <p class="country">London</p>
+        <hr />
+        <table class="row">
+          <tr>
+            <td class="popularity">
+              <h3>80K</h3>
+              <p>Followers</p>
+            </td>
+            <td class="popularity">
+              <h3>809K</h3>
+              <p>Likes</p>
+            </td>
+            <td class="popularity">
+              <h3>1.4K</h3>
+              <p>Photos</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ali Murtaza</a>.
+    </div>
+  </body>
+</html>
